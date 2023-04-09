@@ -18,228 +18,237 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="bg-black text-white flex items-center justify-between p-3.5">
-        <figure>
-            <img class="w-22 h-6" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify">
+    <header class="bg-black text-white flex items-center justify-between p-3.5 lg:py-6">
+        <figure class="lg:w-3/5">
+            <img class="w-22 h-6 lg:w-34 lg:h-10 lg:pl-28" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify">
         </figure>
         <!-- NAVBAR -->
-        <nav>
-            <ul>
-                <li class="sm:hidden lg:block"><a href="#">Premium</a></li>
-                <li class="sm:hidden lg:block"><a href="#">Support</a></li>
-                <li class="sm:hidden lg:block"><a href="#">Download</a></li>
-                <li class="sm:hidden lg:block"><a href="#">Sign up</a></li>
-                <li class="sm:hidden lg:block"><a href="#">Log in</a></li>
-            </ul>
+        <nav class="lg:w-2/5">
             <i class="fa-solid fa-bars lg:hidden text-2xl"></i>
+            <ul class="flex justify-around">
+                <li class="hidden lg:block font-bold lg:hover:text-[#07f513]"><a href="#">Premium</a></li>
+                <li class="hidden lg:block font-bold lg:hover:text-[#07f513]"><a href="#">Support</a></li>
+                <li class="hidden lg:block font-bold lg:hover:text-[#07f513]"><a href="#">Download</a></li>
+                <li class="hidden lg:block">|</li>
+                <li class="hidden lg:block font-bold lg:hover:text-[#07f513]"><a href="#">Sign up</a></li>
+                <li class="hidden lg:block font-bold lg:hover:text-[#07f513]"><a href="#">Log in</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <!-- FIRST SECTION -->
-        <section class="bg-[#1d75de] text-white px-3.5 pt-16">
-            <h1 class="font-bold text-3xl">Get Premium free for 1 month</h1>
-            <h2 class="font-medium text-lg pt-8 pb-12">Only $9.99/month after. Cancel anytime.</h2>
-            <button class="block font-bold text-sm w-full uppercase bg-[#190A0A] border-[#190A0A] border-2 py-3 px-9 rounded-full mb-3">get started</button>
-            <button class="block font-bold text-sm w-full uppercase border-white border-2 py-3 px-9 rounded-full">view plans</button>
+        <section class="bg-[#1d75de] text-white px-3.5 pt-16 lg:pl-28 lg:pt-28">
+            <h1 class="font-bold text-3xl lg:text-4xl lg:font-extrabold">Get Premium free for 1 month</h1>
+            <h2 class="font-medium text-lg pt-8 pb-12 lg:text-2xl">Only $9.99/month after. Cancel anytime.</h2>
+            <button class="block font-bold text-sm w-full uppercase bg-[#190A0A] border-[#190A0A] border-2 py-3 px-9 rounded-full mb-3 lg:w-max lg:inline lg:hover:bg-black">get started</button>
+            <button class="block font-bold text-sm w-full uppercase border-white border-2 py-3 px-9 rounded-full lg:w-max lg:inline lg:hover:bg-[#0969db]">view plans</button>
             <p class="text-xs pb-28 pt-10"><a href="#" class="underline decoration-solid">Terms and conditions apply. </a>1 month free not available for users who have already tried Premium.</p>
         </section>
         <!-- SECOND SECTION -->
-        <section class="px-6 pb-8">
-            <h2 class="font-bold text-3xl text-center py-10">Why go Premium?</h2>
-            <article class="flex items-center mb-12">
-                <figure>
-                    <img class="w-28 h-26" src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" alt="Download music">
-                </figure>
-                <div class="mx-4">
-                    <h3 class="font-bold text-xl mb-3">Download music.</h3>
-                    <p>Listen anywhere.</p>
-                </div>
-            </article>
-            <article class="flex items-center mb-12">
-                <figure>
-                    <img class="w-28 h-26" src="https://i.scdn.co/image/ab671c3d0000f43098292b95d24a697c20df5137" alt="Ad-free music listening">
-                </figure>
-                <div class="mx-4">
-                    <h3 class="font-bold text-xl mb-3">Ad-free music listening.</h3>
-                    <p>Enjoy nonstop music.</p>
-                </div>
-            </article>
-            <article class="flex items-center mb-12">
-                <figure>
-                    <img class="w-28 h-26" src="https://i.scdn.co/image/ab671c3d0000f4306998d3ffd58aad6da6afdf67" alt="Play any song">
-                </figure>
-                <div class="mx-4">
-                    <h3 class="font-bold text-xl mb-3">Play any song.</h3>
-                    <p>Even on mobile.</p>
-                </div>
-            </article>
-            <article class="flex items-center mb-12">
-                <figure>
-                    <img class="w-28 h-26" src="https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012" alt="Unlimited skips">
-                </figure>
-                <div class="mx-4">
-                    <h3 class="font-bold text-xl mb-3">Unlimited skips.</h3>
-                    <p>Just hit next.</p>
-                </div>
-            </article>
+        <section class="px-6 pb-8 lg:pb-26">
+            <h2 class="font-bold text-3xl text-center py-10 lg:text-4xl lg:py-24">Why go Premium?</h2>
+            <section class="lg:flex lg:justify-around lg:px-36">
+                <article class="flex items-center mb-12 lg:block">
+                    <figure>
+                        <img class="w-28 h-26 lg:m-auto lg:w-36 lg:h-36" src="https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f" alt="Download music">
+                    </figure>
+                    <div class="mx-4">
+                        <h3 class="font-bold text-xl mb-3 mt-10">Download music.</h3>
+                        <p class="text-center">Listen anywhere.</p>
+                    </div>
+                </article>
+                <article class="flex items-center mb-12 lg:block">
+                    <figure>
+                        <img class="w-28 h-26 lg:m-auto lg:w-36 lg:h-36" src="https://i.scdn.co/image/ab671c3d0000f43098292b95d24a697c20df5137" alt="Ad-free music listening">
+                    </figure>
+                    <div class="mx-4">
+                        <h3 class="font-bold text-xl mb-3 mt-10">Ad-free music listening.</h3>
+                        <p class="text-center">Enjoy nonstop music.</p>
+                    </div>
+                </article>
+                <article class="flex items-center mb-12 lg:block">
+                    <figure>
+                        <img class="w-28 h-26 lg:m-auto lg:w-36 lg:h-36" src="https://i.scdn.co/image/ab671c3d0000f4306998d3ffd58aad6da6afdf67" alt="Play any song">
+                    </figure>
+                    <div class="mx-4">
+                        <h3 class="font-bold text-xl mb-3 mt-10">Play any song.</h3>
+                        <p class="text-center">Even on mobile.</p>
+                    </div>
+                </article>
+                <article class="flex items-center mb-12 lg:block">
+                    <figure>
+                        <img class="w-28 h-26 lg:m-auto lg:w-36 lg:h-36" src="https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012" alt="Unlimited skips">
+                    </figure>
+                    <div class="mx-4">
+                        <h3 class="font-bold text-xl mb-3 mt-10">Unlimited skips.</h3>
+                        <p class="text-center">Just hit next.</p>
+                    </div>
+                </article>
+            </section>
         </section>
         <!-- THIRD SECTION -->
-        <section class="bg-[#efefef]">
-            <h2 class="font-bold text-3xl text-center py-10">Pick your Premium</h2>
-            <p>Listen without limits on your phone, speaker, and other devices.</p>
-            <div>iconos</div>
-        </section>
-        <section>
-            <!-- Individual -->
-            <div>
-                <span>1 month free</span>
-                <h3>Individual</h3>
-                <p>$9.99/month after offer period</p>
-                <p>1 account</p>
-                <ul>
-                    <li>
-                        <div></div>
-                        Ad-free music listening
-                    </li>
-                    <li>
-                        <div></div>
-                        Play anywhere - even offline
-                    </li>
-                    <li>
-                        <div></div>
-                        On-demand playback
-                    </li>
-                </ul>
-                <button class="uppercase">get started</button>
-                <p><a href="#">Terms and conditions apply.
-                </a>1 month free not available for users who have already tried Premium.</p>
-            </div>
-            <!-- Duo -->
-            <div>
-                <span>1 month free</span>
-                <h3>Duo</h3>
-                <p>$12.99/month after offer period</p>
-                <p>2 accounts</p>
-                <ul>
-                    <li>
-                        <div></div>
-                        2 Premium accounts for a couple under one roof
-                    </li>
-                    <li>
-                        <div></div>
-                        Ad-free music listening, play offline, on-demand playback
-                    </li>
-                </ul>
-                <button class="uppercase">get started</button>
-                <p><a href="#">Terms and conditions apply.
-                </a>1 month free not available for users who have already tried Premium.</p>
-            </div>
-            <!-- Family -->
-            <div>
-                <span>1 month free</span>
-                <h3>Family</h3>
-                <p>$15.99/month after offer period</p>
-                <p>6 accounts</p>
-                <ul>
-                    <li>
-                        <div></div>
-                        6 Premium accounts for family members living under one roof
-                    </li>
-                    <li>
-                        <div></div>
-                        Block explicit music
-                    </li>
-                    <li>
-                        <div></div>
-                        Ad-free music listening, play offline, on-demand playback
-                    </li>
-                    <li>
-                        <div></div>
-                        Spotify Kids: a separate app made just for kids
-                    </li>
-                </ul>
-                <button class="uppercase">get started</button>
-                <p><a href="#">Terms and conditions apply.
-                </a>1 month free not available for users who have already tried Premium.</p>
-            </div>
-            <!-- Student -->
-            <div>
-                <span>1 month free</span>
-                <h3>Student</h3>
-                <p>$4.99/month after offer period</p>
-                <p>1 account</p>
-                <ul>
-                    <li>
-                        <div></div>
-                        Hulu (With Ads) plan
-                    </li>
-                    <li>
-                        <div></div>
-                        SHOWTIME
-                    </li>
-                    <li>
-                        <div></div>
-                        Ad-free music listening
-                    </li>
-                    <li>
-                        <div></div>
-                        Play anywhere - even offline
-                    </li>
-                    <li>
-                        <div></div>
-                        On-demand playback
-                    </li>
-                </ul>
-                <button class="uppercase">get started</button>
-                <p>Offer currently includes access to Hulu (With Ads) plan and SHOWTIME Streaming Service, subject to eligibility. Available only to students at an accredited higher education institution. 1 month free only open to higher education students who haven't already tried Premium. <a href="#">Terms and conditions apply.</a></p>
-            </div>
+        <section class="bg-[#efefef] pb-8">
+            <h2 class="font-bold text-3xl text-center pt-10 pb-4 lg:text-4xl lg:pt-24">Pick your Premium</h2>
+            <p class="text-center">Listen without limits on your phone, speaker, and other devices.</p>
+            <figure class="flex justify-center pt-4">
+                <img class="w-10 h-10 mx-2 mb-16" src="https://content-tooling.spotifycdn.com/images/c870a1e1-f980-4626-ab1b-14eeb8d4cab4_visa.svg" alt="visa card">
+                <img class="w-10 h-10" src="https://content-tooling.spotifycdn.com/images/e5ebed70-82ea-42ae-917d-b3edb7ed98ef_mastercard.svg" alt="master card">
+                <img class="w-10 h-10 mx-2" src="https://content-tooling.spotifycdn.com/images/3fcc3442-3a00-455f-9256-d3115ac3e382_amex.svg" alt="card amex">
+                <img class="w-10 h-10" src="https://content-tooling.spotifycdn.com/images/205f3c09-6649-42db-8bf3-7a356be0ae37_discover.svg" alt="card discover">
+                <img class="w-8 h-7 my-2" src="https://i.scdn.co/image/ab671c3d0000f4300e2f169bed4bb2798accb287" alt="paypal">
+            </figure>
+            <section class="lg:flex lg:px-24">
+                <!-- Individual -->
+                <article class="bg-white w-3/4 p-6 rounded-xl shadow-lg shadow-gray-700 mx-auto mb-12 lg:w-1/4 lg:mr-4">
+                    <span class="bg-[#1d75de] px-2 py-1 text-white font-bold rounded-md">1 month free</span>
+                    <h3 class="font-bold text-2xl mt-3">Individual</h3>
+                    <p>$9.99/month after offer period</p>
+                    <p class="pb-6 border-b-2 border-b-neutral-800">1 account</p>
+                    <ul>
+                        <li class="mt-8">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            Ad-free music listening
+                        </li>
+                        <li class="my-2">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            Play anywhere - even offline
+                        </li>
+                        <li class="mb-8">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            On-demand playback
+                        </li>
+                    </ul>
+                    <button class="uppercase w-full font-bold text-sm bg-[#190A0A] border-[#190A0A] border-2 py-2 px-9 rounded-full mb-3 text-white lg:hover:bg-black">get started</button>
+                    <p class="text-xs pt-2 text-slate-700"><a href="#" class="underline decoration-solid">Terms and conditions apply. </a>1 month free not available for users who have already tried Premium.</p>
+                </article>
+                 <!-- Duo -->
+                <article class="bg-white w-3/4 p-6 rounded-xl shadow-lg shadow-gray-700 mx-auto mb-12 lg:w-1/4 lg:mr-4">
+                    <span class="bg-[#1d75de] px-2 py-1 text-white font-bold rounded-md">1 month free</span>
+                    <h3 class="font-bold text-2xl mt-3">Duo</h3>
+                    <p>$12.99/month after offer period</p>
+                    <p class="pb-6 border-b-2 border-b-neutral-800">2 accounts</p>
+                    <ul>
+                        <li class="mt-8">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            2 Premium accounts for a couple under one roof
+                        </li>
+                        <li class="my-2 mb-8">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            Ad-free music listening, play offline, on-demand playback
+                        </li>
+                    </ul>
+                    <button class="uppercase font-bold w-full text-sm bg-[#190A0A] border-[#190A0A] border-2 py-2 px-9 rounded-full mb-3 text-white lg:hover:bg-black">get started</button>
+                    <p class="text-xs pt-2 text-slate-700"><a href="#" class="underline decoration-solid">Terms and conditions apply. </a>1 month free not available for users who have already tried Premium.</p>
+                </article>
+                <!-- Family -->
+                <article class="bg-white w-3/4 p-6 rounded-xl shadow-lg shadow-gray-700 mx-auto mb-12 lg:w-1/4 lg:mr-4">
+                    <span class="bg-[#1d75de] px-2 py-1 text-white font-bold rounded-md">1 month free</span>
+                    <h3 class="font-bold text-2xl mt-3">Family</h3>
+                    <p>$15.99/month after offer period</p>
+                    <p class="pb-6 border-b-2 border-b-neutral-800">6 accounts</p>
+                    <ul>
+                        <li class="mt-8">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            6 Premium accounts for family members living under one roof
+                        </li>
+                        <li class="my-2">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            Block explicit music
+                        </li>
+                        <li class="my-2">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            Ad-free music listening, play offline, on-demand playback
+                        </li>
+                        <li class="my-2 mb-8">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            Spotify Kids: a separate app made just for kids
+                        </li>
+                    </ul>
+                    <button class="uppercase w-full font-bold text-sm bg-[#190A0A] border-[#190A0A] border-2 py-2 px-9 rounded-full mb-3 text-white lg:hover:bg-black">get started</button>
+                    <p class="text-xs pt-2 text-slate-700"><a href="#" class="underline decoration-solid">Terms and conditions apply. </a>1 month free not available for users who have already tried Premium.</p>
+                </article>
+                <!-- Student -->
+                <article class="bg-white w-3/4 p-6 rounded-xl shadow-lg shadow-gray-700 mx-auto mb-12 lg:w-1/4 lg:mr-4">
+                    <span class="bg-[#1d75de] px-2 py-1 text-white font-bold rounded-md">1 month free</span>
+                    <h3 class="font-bold text-2xl mt-3">Student</h3>
+                    <p>$4.99/month after offer period</p>
+                    <p class="pb-6 border-b-2 border-b-neutral-800">1 account</p>
+                    <ul>
+                        <li class="mt-8">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            Hulu (With Ads) plan
+                        </li>
+                        <li class="my-2">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            SHOWTIME
+                        </li>
+                        <li class="my-2">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            Ad-free music listening
+                        </li>
+                        <li class="my-2">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            Play anywhere - even offline
+                        </li>
+                        <li class="my-2 mb-8">
+                            <i class="fa-solid fa-check" style="color: #383838;"></i>
+                            On-demand playback
+                        </li>
+                    </ul>
+                    <button class="uppercase w-full font-bold text-sm bg-[#190A0A] border-[#190A0A] border-2 py-2 px-9 rounded-full mb-3 text-white lg:hover:bg-black">get started</button>
+                    <p class="text-xs pt-2 text-slate-700">Offer currently includes access to Hulu (With Ads) plan and SHOWTIME Streaming Service, subject to eligibility. Available only to students at an accredited higher education institution. 1 month free only open to higher education students who haven't already tried Premium. <a href="#" class="underline decoration-solid">Terms and conditions apply.</a></p>
+                </article>
+            </section>
         </section>
     </main>
     <!-- FOOTER -->
-    <footer>
-        <span class="mh-footer-primary svelte-1gcdbl9"><svg viewBox="0 0 63 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet"><g fill-rule="evenodd" class="svelte-1gcdbl9"><path d="M61.842 9.506a1.02 1.02 0 0 1-1.023-1.024c0-.562.453-1.03 1.029-1.03a1.02 1.02 0 0 1 1.023 1.024 1.03 1.03 0 0 1-1.029 1.03m.006-1.952a.915.915 0 0 0-.922.928c0 .51.394.921.916.921a.916.916 0 0 0 .922-.927.908.908 0 0 0-.916-.922m.226 1.027l.29.406h-.244l-.26-.372h-.225v.372h-.204V7.912h.48c.249 0 .413.128.413.343 0 .176-.102.284-.25.326m-.172-.485h-.267v.34h.267c.133 0 .212-.065.212-.17 0-.11-.08-.17-.212-.17m-12.804-3.52a1.043 1.043 0 1 0-.001 2.086 1.043 1.043 0 0 0 0-2.087m.72 2.89h-1.454a.107.107 0 0 0-.106.107v6.346c0 .06.047.107.106.107h1.455a.107.107 0 0 0 .107-.107V7.572a.107.107 0 0 0-.107-.107m3.233.006v-.2c0-.592.227-.856.736-.856.303 0 .546.06.82.152a.106.106 0 0 0 .14-.102V5.24a.107.107 0 0 0-.076-.102 3.993 3.993 0 0 0-1.21-.174c-1.343 0-2.053.757-2.053 2.188v.308h-.699a.107.107 0 0 0-.107.106v1.257c0 .059.048.107.107.107h.699v4.99c0 .058.047.106.106.106h1.455a.107.107 0 0 0 .106-.107v-4.99h1.358l2.081 4.99c-.236.523-.468.628-.785.628-.257 0-.527-.077-.803-.228a.109.109 0 0 0-.084-.008.106.106 0 0 0-.063.058l-.493 1.081a.106.106 0 0 0 .045.138c.515.279.98.398 1.554.398 1.074 0 1.668-.5 2.191-1.847L60.6 7.617a.106.106 0 0 0-.099-.146h-1.514a.107.107 0 0 0-.1.072l-1.552 4.431-1.7-4.434a.106.106 0 0 0-.099-.069h-2.485m-5.577-.006h-1.6V5.828a.106.106 0 0 0-.107-.106h-1.455a.107.107 0 0 0-.106.106v1.637h-.7a.106.106 0 0 0-.106.107v1.25c0 .059.048.107.106.107h.7v3.234c0 1.308.65 1.97 1.934 1.97.522 0 .954-.107 1.362-.338a.106.106 0 0 0 .054-.093v-1.19a.106.106 0 0 0-.154-.096c-.28.141-.551.206-.854.206-.467 0-.675-.211-.675-.686V8.929h1.6a.106.106 0 0 0 .107-.107v-1.25a.106.106 0 0 0-.106-.107m-7.671-.133c-1.96 0-3.497 1.51-3.497 3.437 0 1.907 1.526 3.4 3.473 3.4 1.967 0 3.508-1.504 3.508-3.424 0-1.914-1.53-3.413-3.484-3.413m0 5.362c-1.043 0-1.83-.838-1.83-1.95 0-1.115.76-1.924 1.806-1.924 1.05 0 1.84.838 1.84 1.95 0 1.115-.763 1.924-1.816 1.924m-7.014-5.362c-.82 0-1.492.323-2.046.984v-.744a.107.107 0 0 0-.106-.107h-1.455a.107.107 0 0 0-.106.107v8.27c0 .058.048.106.106.106h1.455a.107.107 0 0 0 .106-.106v-2.61c.555.621 1.227.925 2.046.925 1.522 0 3.063-1.172 3.063-3.412s-1.54-3.413-3.063-3.413m1.372 3.413c0 1.14-.703 1.937-1.709 1.937-.995 0-1.745-.833-1.745-1.937s.75-1.937 1.745-1.937c.99 0 1.71.814 1.71 1.937m-8.437-1.81c-1.624-.388-1.913-.66-1.913-1.231 0-.54.508-.903 1.264-.903.732 0 1.459.275 2.22.843a.107.107 0 0 0 .15-.023l.794-1.119a.107.107 0 0 0-.02-.144c-.906-.728-1.927-1.081-3.12-1.081-1.755 0-2.98 1.052-2.98 2.559 0 1.615 1.057 2.187 2.884 2.628 1.554.358 1.817.658 1.817 1.195 0 .594-.53.963-1.385.963-.948 0-1.721-.32-2.587-1.068a.11.11 0 0 0-.078-.026.105.105 0 0 0-.073.038l-.89 1.058a.105.105 0 0 0 .011.148 5.303 5.303 0 0 0 3.581 1.373c1.89 0 3.112-1.033 3.112-2.631 0-1.351-.807-2.098-2.787-2.58M9.507.305a9.41 9.41 0 1 0 0 18.82 9.41 9.41 0 0 0 0-18.82m4.316 13.572a.586.586 0 0 1-.807.195c-2.21-1.35-4.99-1.655-8.266-.907a.586.586 0 1 1-.261-1.143c3.584-.82 6.659-.467 9.139 1.049.276.169.363.53.195.806m1.15-2.562a.734.734 0 0 1-1.008.242c-2.529-1.555-6.385-2.005-9.377-1.097a.735.735 0 0 1-.426-1.404c3.418-1.037 7.666-.534 10.57 1.25a.734.734 0 0 1 .242 1.01m.1-2.669C12.04 6.846 7.036 6.68 4.141 7.56a.88.88 0 1 1-.511-1.684c3.323-1.01 8.849-.814 12.34 1.258a.88.88 0 0 1-.898 1.514"></path></g></svg> Spotify</span>
-        <ul>
-            <li>COMPANY</li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">For the Record</a></li>
-        </ul>
-        <ul>
-            <li>COMMUNITIES</li>
-            <li><a href="#">For Artists</a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">Advertising</a></li>
-            <li><a href="#">Investors</a></li>
-            <li><a href="#">Vendors</a></li>
-        </ul>
-        <ul>
-            <li>COMPANY</li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Web Player</a></li>
-            <li><a href="#">Free Mobile App</a></li>
-        </ul>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+    <footer class="bg-black text-white">
+        <section class="lg:flex">
+            <figure class="px-6 py-12">
+                <img class="w-24 h-8" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify">
+            </figure>
+            <ul class="px-6 pb-10">
+                <li class="text-[#919496] font-bold">COMPANY</li>
+                <li class="py-4"><a href="#">About</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li class="py-4"><a href="#">For the Record</a></li>
+            </ul>
+            <ul class="px-6 pb-10">
+                <li class="text-[#919496] font-bold">COMMUNITIES</li>
+                <li class="py-4"><a href="#">For Artists</a></li>
+                <li><a href="#">Developers</a></li>
+                <li class="py-4"><a href="#">Advertising</a></li>
+                <li><a href="#">Investors</a></li>
+                <li class="py-4"><a href="#">Vendors</a></li>
+            </ul>
+            <ul class="px-6 pb-10">
+                <li class="text-[#919496] font-bold">USEFUL LINKS</li>
+                <li class="py-4"><a href="#">Support</a></li>
+                <li><a href="#">Web Player</a></li>
+                <li class="py-4"><a href="#">Free Mobile App</a></li>
+            </ul>
+            <figure class="px-6 py-12">
+                <i class="fa-brands fa-instagram py-2 px-3 rounded-full text-white bg-[#222326] text-2xl mr-2"></i>
+                <i class="fa-brands fa-twitter py-2 px-3 rounded-full text-white bg-[#222326] text-2xl mr-2"></i>
+                <i class="fa-brands fa-facebook py-2 px-3 rounded-full text-white bg-[#222326] text-2xl"></i>
+            </figure>
+        </section>
+        <div class="flex">
+            <ul class="text-[#919496] text-xs px-6 flex w-3/5 justify-between pt-8">
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">About Ads</a></li>
+            </ul>
+            <ul class="text-[#919496] text-xs text-end w-2/5 px-6">
+                <li class="mb-4"><a href="#">USA</a></li>
+                <li>© 2023 Spotify AB</li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="#">Legal</a></li>
-            <li><a href="#">Privacy Center</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Cookies</a></li>
-            <li><a href="#">About Ads</a></li>
-            <li><a href="#">Cookies Settings</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">USA</a></li>
-            <li>© 2023 Spotify AB</li>
-        </ul>
-        <div>
-        <h4>Realizado con <i class="fa-solid fa-heart" aria-hidden="true"></i> por<span>Verónica Guiñan</span></h4>
-        <h5>Sigueme <a href="https://www.instagram.com/unachamaqueprograma/">@unachamaqueprograma</a></h5>
-        <h6>Copyright © 2023</h6>
-        </div>
+        <h4 class="text-xs text-center pt-4">Realizado con <i class="fa-solid fa-heart" aria-hidden="true"></i> por<span class="font-bold"> Verónica Guiñan</span></h4>
+        <h5 class="text-xs text-center">Sigueme <a class="font-bold" href="https://www.instagram.com/unachamaqueprograma/">@unachamaqueprograma</a></h5>
+        <h6 class="text-xs text-center pb-4">Copyright © 2023 ~ Tailwind</h6>
     </footer>
     
 </body>
